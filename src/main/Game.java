@@ -2,8 +2,10 @@ package main;
 
 public class Game {
     private GameWindow gameWindow;
+    private GamePanel gamePanel;
     // constructor
     public Game() {
-        gameWindow = new GameWindow();
+        gamePanel = new GamePanel();
+        gameWindow = new GameWindow(gamePanel);
     }
 }
